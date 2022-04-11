@@ -12,7 +12,6 @@ export const gap = (g: number, m: number, n: number): number[] | null => {
         if ((arr.length === 2) && ((arr[1] - arr[0]) === g)) {
             break;
         } else {
-            debugger
             if (arr.length === 2) arr.splice(0, 1)
         }
 
