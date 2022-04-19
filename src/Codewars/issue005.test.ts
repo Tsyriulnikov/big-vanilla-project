@@ -1,10 +1,10 @@
 test("IP in hex",()=>{
 
-    const rgb=(r, g, b) =>{
-        const hexString=(d)=>{
+    const rgb=(r:number, g:number, b:number) =>{
+        const hexString=(d:number)=>{
             if(d<0) d=0;
             if(d>255) d=255;
-            let dString = d.toString(16);
+            let dString:string = d.toString(16);
             if (dString.length % 2) {
                 dString = '0' + dString;
             }
